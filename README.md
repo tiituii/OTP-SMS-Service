@@ -16,7 +16,7 @@ The API validates phone numbers in the format:
 Where `+855` is the country code and the rest are digits.  
 Regex pattern used:
 ```
-^\+\d{7,15}$
+^\+855\d{8,9}$
 ```
 
 ## API Endpoint
@@ -40,7 +40,7 @@ Regex pattern used:
 ## Installation
 1. Clone this repository
 ```bash
-git clone https://github.com/yourusername/otp-sender-api.git
+git clone https://github.com/tiituii/otp-sender-api.git
 cd otp-sender-api
 ```
 2. Install dependencies
