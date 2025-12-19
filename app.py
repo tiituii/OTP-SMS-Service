@@ -16,6 +16,7 @@ def send_otp():
     random_otp = random.randint(100000, 999999)  # 6-digit random number
     msg = "Your OTP Code is : {}".format(random_otp)
     success, detail = send_sms (phone, msg) 
+    print(success)
     if success:
         return jsonify({"OTP Code": str(random_otp),"status": "success", "detail": "OTP has been Sent!"})
     else:
@@ -23,3 +24,5 @@ def send_otp():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000)
+
+
